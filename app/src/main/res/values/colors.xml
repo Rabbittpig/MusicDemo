@@ -8,4 +8,6 @@
     <color name="mainColorH">#C80F1F</color>
     <color name="lineColor">#c3c3c3</color>
     <color name="itemColorH">#DEE1E6</color>
+    <color name="titleColor">#333333</color>
+    <color name="infoColor">#888888</color>
 </resources>
