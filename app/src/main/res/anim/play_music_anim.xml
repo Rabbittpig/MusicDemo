@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:interpolator 动画插值器  即转动的效果次数-->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/linear_interpolator">
+    <!--fromDegrees:起点位置  toDegrees:终点位置 x,y转动中心点 duration动画执行时间-->
+    <!--android:repeatCount="infinite"光盘一直转动-->
+    <rotate
+        android:fromDegrees="0"
+        android:toDegrees="360"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="@integer/play_music_anim_duration"
+        android:repeatCount="infinite"
+        />
+
+</set>

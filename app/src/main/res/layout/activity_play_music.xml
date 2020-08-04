@@ -11,6 +11,12 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@mipmap/img1"/>
+    <com.example.musicdemo.views.PlayMusicView
+        android:id="@+id/play_music_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.example.musicdemo.views.PlayMusicView>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
