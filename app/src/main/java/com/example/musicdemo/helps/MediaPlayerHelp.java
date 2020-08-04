@@ -41,9 +41,10 @@ public class MediaPlayerHelp {
      */
     /**
      * 当前播放的音乐
+     *
      * @param path
      */
-    public void setPath(String path){
+    public void setPath(String path) {
         /**
          * 1.音乐正在播放,重置音乐播放状态
          * 2.设置播放音乐路径
@@ -51,9 +52,9 @@ public class MediaPlayerHelp {
          */
         mPath = path;
 //        1.音乐正在播放,重置音乐播放状态
-           if(mMediaPlayer.isPlaying()){
-               mMediaPlayer.reset();
-           }
+        if (mMediaPlayer.isPlaying()) {
+            mMediaPlayer.reset();
+        }
 //           2.设置播放音乐路径
         try {
             mMediaPlayer.setDataSource(mContext, Uri.parse(path));
@@ -65,7 +66,7 @@ public class MediaPlayerHelp {
         mMediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mediaPlayer) {
-                if(onMediaPlayerHelpListener != null){
+                if (onMediaPlayerHelpListener != null) {
                     onMediaPlayerHelpListener.onPrepared(mediaPlayer);
                 }
             }
@@ -74,28 +75,30 @@ public class MediaPlayerHelp {
 
     /**
      * 返回正在播放的音乐路径
+     *
      * @return
      */
-    public String  getPath(){
+    public String getPath() {
         return mPath;
     }
 
     /**
      * 播放音乐
      */
-    public void start(){
-        if(mMediaPlayer.isPlaying())return;
-            mMediaPlayer.start();
+    public void start() {
+        if (mMediaPlayer.isPlaying()) return;
+        mMediaPlayer.start();
     }
 
     /**
      * 暂停播放
      */
-    public void pause(){
-            mMediaPlayer.pause();
+    public void pause() {
+        mMediaPlayer.pause();
 
     }
-    public interface OnMediaPlayerHelpListener{
+
+    public interface OnMediaPlayerHelpListener {
         void onPrepared(MediaPlayer mediaPlayer);
     }
 }
