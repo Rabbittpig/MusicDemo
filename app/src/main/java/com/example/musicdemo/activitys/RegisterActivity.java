@@ -23,4 +23,6 @@ public class RegisterActivity extends BaseActivity {
         initNavBar(true,"注册",false);
     }
 
+    public void onRegisterClick(View view) {
+    }
 }

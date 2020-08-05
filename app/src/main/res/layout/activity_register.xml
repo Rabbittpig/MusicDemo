@@ -30,7 +30,7 @@
         app:input_icon="@mipmap/password"
         app:input_hint="请输入密码"
         app:is_password="true"/>
-    app:is_password="false"/>
+
     <View
         style="@style/line"/>
     <com.example.musicdemo.views.InputView
